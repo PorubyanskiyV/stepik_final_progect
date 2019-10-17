@@ -10,7 +10,8 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_BASKET_BUTTON = (By.CSS_SELECTOR, "button.btn-add-to-basket")
-    BOOKS_NAME_IN_BASKET = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-success  fade in'][1]")
+    BOOKS_NAME_IN_BASKET = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-success  fade in'][1]//strong")
     BOOKS_NAME = (By.XPATH, "//div[@class ='col-sm-6 product_main']/h1")
     BOOKS_PRICE_IN_BASKET =(By.CSS_SELECTOR, "div.alert-info strong")
     BOOKS_PRICE =(By.CSS_SELECTOR, "p.price_color")
+    SUCCESS_MESSAGE = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-success  fade in'][1]")
